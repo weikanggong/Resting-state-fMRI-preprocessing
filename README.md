@@ -44,8 +44,8 @@ nohup matlab -nodisplay <Scipt_to_Run.m> report.log &
 
 1. The file 'FunImg_3mmStdSpace.nii.gz' and 'FunImg_3mmStdSpace_NoGlobalSignal.nii.gz' in the '7_FunImg_to_Std' folder is data you can use for further analysis.
 
-  'FunImg_3mmStdSpace.nii.gz' is the data in the 3mm standard space with global signal。
-  'FunImg_3mmStdSpace_NoGlobalSignal.nii.gz' is the data in the 3mm standard space with global signal being regressed out.
+  1.1 'FunImg_3mmStdSpace.nii.gz' is the data in the 3mm standard space with global signal。
+  1.2 'FunImg_3mmStdSpace_NoGlobalSignal.nii.gz' is the data in the 3mm standard space with global signal being regressed out.
   
   
   
