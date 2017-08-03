@@ -31,7 +31,7 @@
                                 |---/subject_2_rest.nii.gz/
             |---'subject 2'-----|---'T1'---/subject_2_t1.nii.gz/
     'data'--                    |---....nii.gz
-            |---...        -----|---'T1'---....nii.gz
+            |---...........-----|---'T1'---....nii.gz
                                 |---/subject_n_rest.nii.gz/
             |---'subject n'-----|---'T1'---/subject_n_t1.nii.gz/
 
@@ -48,9 +48,10 @@ nohup matlab -nodisplay <Scipt_to_Run.m> report.log &
   
 2. The file 'meanFD_power.1D' in the '3_Motion_Corrected' folder is the mean Framewise displacement (FD) of this subject.
 
-3. The file '_normalization.tif' is the ss
-  
-  
+3. The file '**_normalization.tif' is a picture for checking the spatial normalization of fMRI data and T1 data. The first column the normalized fMRI data in standard space, and the second column is the normalized T1 data in standard space, and the third column is the template.
+
+4. The file '**_6head_motion.tif' is a picture that shows the 6 ridge-body transformation parameters estimated in the motion correction step by the mcflirt in FSL.
+  
   
   
   
