@@ -58,7 +58,7 @@ nohup matlab -nodisplay <Scipt_to_Run.m> report.log &
 4. The file '**_6head_motion.tif' is a picture that shows the 6 ridge-body transformation parameters estimated in the motion correction step by mcflirt in FSL.
   
   
-  
+**If you have any questions, please email me at weikanggong@gmail.com**   
   
 
 
