@@ -10,14 +10,14 @@
  2. FSL (https://fsl.fmrib.ox.ac.uk/fsl/fslwiki);
  3. AFNI (https://afni.nimh.nih.gov/);
  4. Make sure that all the .m files in this package and the BrainWavelet toolbox (http://www.brainwavelet.org/) are in your Matlab Path.
-
+ 5. the BrainWavelet toolbox should be compiled.
 **The preprocessing steps include:**
 
  1. fMRI data brain extraction (bet in FSL).
  2. Slice timing correction (slicetimer in FSL).
  3. Motion correction (mcflirt in FSL).
  4. Smoothing (fslmath in FSL).
- 5. Wavelet Despiking (BWT).
+ 5. Wavelet Despiking (BrainWavelet toolbox).
  6. Regress out WM/CSF/Motion parameters and temporal filtering (3dTproject in AFNI).
  7. FunImg register to T1, then normalize to 3mm Standard Space (BBR, flirt and fnirt in FSL).
  8. T1 data are also preprocessed duing these steps (bet,fast,flirt,fnirt).
