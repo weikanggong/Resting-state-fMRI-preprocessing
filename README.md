@@ -40,7 +40,7 @@
 ```
 nohup matlab -nodisplay <Scipt_to_Run.m> report.log &
 ```
-**in the terminal to begin the preprocessing. If something goes wrong, you can just delete the 'bad' data and rerun the above command. The software will automatically find which steps has or has not been done.**
+**in the terminal to begin the preprocessing. If something goes wrong, you can just delete the 'bad' data and rerun the above command. The software will automatically continue to process the steps that have not been done.**
 
 **Outputs of this software:**
 
