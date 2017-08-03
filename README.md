@@ -25,6 +25,11 @@
 **Arrange your data in a folder as the 'example' folder :**
 
 ('data' is a folder, 'subject 1',..., 'subject n' are folders, 'T1' are folders)
+
+(/subject_k_rest.nii.gz/ is the resting-state fMRI data for k-th subjects. The name of the data is arbitrary.)
+
+(/subject_k_t1.nii.gz/ is the resting-state fMRI data for k-th subjects. The name of the data is arbitrary.)
+
 ```
                                 |---/subject_1_rest.nii.gz/
             |---'subject 1'-----|---'T1'---/subject_1_t1.nii.gz/
