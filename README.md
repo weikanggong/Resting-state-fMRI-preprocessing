@@ -40,11 +40,13 @@ nohup matlab -nodisplay <Scipt_to_Run.m> report.log &
 ```
 **in the terminal to begin the preprocessing.**
 
-**The output:**
+**The outputs:**
 
 1. The file 'FunImg_3mmStdSpace.nii.gz' and 'FunImg_3mmStdSpace_NoGlobalSignal.nii.gz' in the '7_FunImg_to_Std' folder is data you can use for further analysis. 'FunImg_3mmStdSpace.nii.gz' is the data in the 3mm standard space with global signal. 'FunImg_3mmStdSpace_NoGlobalSignal.nii.gz' is the data in the 3mm standard space with global signal being regressed out.
   
-  
+2. The file 'meanFD_power.1D' in the '3_Motion_Corrected' folder is the mean Framewise displacement (FD) of this subject.
+
+3. The file '_normalization.tif' is the ss
   
   
   
