@@ -25,9 +25,9 @@
 
 ('data' is a folder, 'subject 1',..., 'subject n' are folders, 'T1' are folders)
 
-(/subject_k_rest.nii.gz/ is the resting-state fMRI data for k-th subjects. The name of the data can be arbitrary.)
+(/subject_k_rest.nii.gz/ is the resting-state fMRI data of k-th subjects. The name of the data can be arbitrary.)
 
-(/subject_k_t1.nii.gz/ is the resting-state fMRI data for k-th subjects. The name of the data can be arbitrary.)
+(/subject_k_t1.nii.gz/ is the T1 structure data of k-th subjects. The name of the data can be arbitrary.)
 
 ```
                                 |---/subject_1_rest.nii.gz/
