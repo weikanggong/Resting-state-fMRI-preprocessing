@@ -38,4 +38,4 @@
 ```
 nohup matlab -nodisplay <Scipt_to_Run.m> report.log &
 ```
-**in the terminal to run the preprocessing.**
+**in the terminal to begin the preprocessing.**
