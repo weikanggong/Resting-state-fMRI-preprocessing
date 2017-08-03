@@ -32,7 +32,7 @@ Arrange your data in a folder as the 'example' folder :
             |---'subject n'
             
 Set the parameters in the 'Script_to_run.m' script, and type 
-'''
+```
 nohup matlab -nodisplay <Scipt_to_Run.m> report.log &
-'''
+```
 in the terminal to run the preprocessing.
