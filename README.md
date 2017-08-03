@@ -1,10 +1,10 @@
 # Resting-state-fMRI-preprocessing
 
-**A Matlab-based software package for preprocessing resting-state fMRI data. **
+**A Matlab-based software package for preprocessing resting-state fMRI data.**
 
 **It has been tested under Linux CentOS 7.2 and Ubuntu 16.04.**
 
-**To use this software, you should have: **
+**To use this software, you should have:**
 
  1. Matlab 2015b or higher;
  2. FSL (https://fsl.fmrib.ox.ac.uk/fsl/fslwiki);
@@ -22,7 +22,7 @@
  7. FunImg register to T1, then normalize to 3mm Standard Space (BBR, flirt and fnirt in FSL).
  8. T1 data are also preprocessed duing these steps (bet,fast,flirt,fnirt).
 
-**Arrange your data in a folder as the 'example' folder : **
+**Arrange your data in a folder as the 'example' folder :**
 
 ('data' is a folder, 'subject 1',..., 'subject n' are folders, 'T1' are folders)
 
@@ -34,7 +34,7 @@
             |---...
             |---'subject n'
             
-**Set the parameters in the 'Script_to_run.m' script, and type **
+**Set the parameters in the 'Script_to_run.m' script, and type**
 ```
 nohup matlab -nodisplay <Scipt_to_Run.m> report.log &
 ```
