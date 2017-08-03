@@ -26,14 +26,14 @@
 
 ('data' is a folder, 'subject 1',..., 'subject n' are folders, 'T1' are folders)
 ```
-                                |---**subject1_rest.nii.gz**
-            |---'subject 1'-----|---'T1'---**subject1_t1.nii.gz**
-                                |---subject2_rest.nii.gz
-            |---'subject 2'-----|---'T1'---subject2_t1.nii.gz
+                                |---/subject_1_rest.nii.gz/
+            |---'subject 1'-----|---'T1'---/subject_1_t1.nii.gz/
+                                |---/subject_2_rest.nii.gz/
+            |---'subject 2'-----|---'T1'---/subject_2_t1.nii.gz/
     'data'--                    |---....nii.gz
             |---...        -----|---'T1'---....nii.gz
-                                |---subject2_rest.nii.gz
-            |---'subject n'-----|---'T1'---subject2_t1.nii.gz
+                                |---/subject_n_rest.nii.gz/
+            |---'subject n'-----|---'T1'---/subject_n_t1.nii.gz/
 
 ```
 **Set the parameters in the 'Script_to_run.m' script, and type**
