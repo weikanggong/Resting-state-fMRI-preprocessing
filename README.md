@@ -11,6 +11,7 @@
  3. AFNI (https://afni.nimh.nih.gov/);
  4. Make sure that all the .m files in this package and the BrainWavelet toolbox (http://www.brainwavelet.org/) are in your Matlab Path.
  5. the BrainWavelet toolbox should be compiled.
+ 
 **The preprocessing steps include:**
 
  1. fMRI data brain extraction (bet in FSL).
