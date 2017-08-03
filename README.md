@@ -40,9 +40,9 @@
 ```
 nohup matlab -nodisplay <Scipt_to_Run.m> report.log &
 ```
-**in the terminal to begin the preprocessing.**
+**in the terminal to begin the preprocessing. If something goes wrong, you can just delete the 'bad' data and rerun the above command. The software will automatically find which steps has or has not been done.**
 
-**The outputs:**
+**Outputs of this software:**
 
 1. The file 'FunImg_3mmStdSpace.nii.gz' and 'FunImg_3mmStdSpace_NoGlobalSignal.nii.gz' in the '7_FunImg_to_Std' folder is data you can use for further analysis. 'FunImg_3mmStdSpace.nii.gz' is the data in the 3mm standard space with global signal. 'FunImg_3mmStdSpace_NoGlobalSignal.nii.gz' is the data in the 3mm standard space with global signal being regressed out.
   
