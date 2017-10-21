@@ -22,7 +22,7 @@ else
     disp('Done...');
     %bet
     disp('Brain extraction...');
-    command3=['bet cc_',f1,' bet_cc_',f1,' -m'];
+    command3=['bet cc_',f1,' bet_cc_',f1,' -m -f 0.3'];
     unix(command3);
     disp('Done...');
     

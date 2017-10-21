@@ -27,12 +27,16 @@
 %Please set the following parameters for rest fMRI data preprocessing
 
 % Data Directory (Be sure your data structure is correct!!)
-workingDir='/home/wkgong/MATLAB/mycode/Rest_Preprcessing/example';
+workingDir='/home/gongweikang/Depression/xinan';
 
-% Slice Timing TR (in second)
-TR=2.5;
 
-% Slice order (1: bottom up, 2: top down, 3: interleaved+bottem up, 4: interleaved+top down)
+% whether do slicetiming
+Is_slicetiming=1;
+
+% Slice Timing TR (in second) (useful for filter)
+TR=2;
+
+% Slice order (1: bottom up, 2: top down, 3: interleaved+bottem up, 4: interleaved+top down, 'file.txt': specify slice direction)
 slice_order=3;
 
 % Spatial Gaussian Kernel Full-Width at Half Maximum (in mm)
@@ -44,17 +48,22 @@ motion=12;
 % bandpass ([low,high] in Hz)
 bandpass=[0.01,0.1];
 
+
+% The standard space to which each image is mapped.
+resolution='3mm';
+
 % Maximum Memory allowed for Wavelet Despiking (in GB)
 memory=3;
 
 % Number of processors 
-n_core=20;
+n_core=19;
 
 %Be sure that memory*n_core < maximum memory allowed!!
 
 
 
 %% Main Function
+options.Is_slicetiming=Is_slicetiming;
 options.TR=TR;
 options.slice_order=slice_order;
 options.FWHM=FWHM;
@@ -62,10 +71,8 @@ options.motion=motion;
 options.memory=memory;
 options.n_core=n_core;
 options.bandpass=bandpass;
-
+options.resolution=resolution;
 g_MainFunction(workingDir,options);
-
-
 
 
 

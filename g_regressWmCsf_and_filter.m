@@ -80,9 +80,9 @@ end
 
 if TR~=0
     %regress them out and do temporal filtering
-    command10=['3dTproject -ort csf_wm_motion.1D -prefix regressed_and_filtered.nii.gz -passband ',num2str(bandpass(1)),' ',num2str(bandpass(2)),' -input ',infile,'.nii.gz -dt ',TR];
+    command10=['3dTproject -ort csf_wm_motion.1D -prefix regressed_and_filtered.nii.gz -passband ',num2str(bandpass(1)),' ',num2str(bandpass(2)),' -input ',infile,'.nii.gz -dt ',num2str(TR)];
     unix(command10);
-    command10=['3dTproject -ort csf_wm_motion_global.1D -prefix regressed_and_filtered_NoGlobalSignal.nii.gz -passband ',num2str(bandpass(1)),' ',num2str(bandpass(2)),' -input ',infile,'.nii.gz -dt ',TR];
+    command10=['3dTproject -ort csf_wm_motion_global.1D -prefix regressed_and_filtered_NoGlobalSignal.nii.gz -passband ',num2str(bandpass(1)),' ',num2str(bandpass(2)),' -input ',infile,'.nii.gz -dt ',num2str(TR)];
     unix(command10);
 else
     command10=['3dTproject -ort csf_wm_motion.1D -prefix regressed_and_filtered.nii.gz -passband ',num2str(bandpass(1)),' ',num2str(bandpass(2)),' -input ',infile,'.nii.gz'];

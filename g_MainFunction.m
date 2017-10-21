@@ -42,7 +42,7 @@ parfor i=1:n_sub
             outfile='Slice_Timing_Corrected';
         else
             infile=['./',folder,'/',outfile];
-            [outfile,folder]=g_slicetiming(infile,options.TR,options.slice_order);
+            [outfile,folder]=g_slicetiming(infile,options.Is_slicetiming,options.TR,options.slice_order);
         end
         
         
@@ -122,7 +122,7 @@ parfor i=1:n_sub
         end
         
         %fun2str2std
-        f9=dir('./7_FunImg_to_Std/FunImg_4mmStdSpace.nii.gz');
+        f9=dir(['./7_FunImg_to_Std/FunImg_',options.resolution,'StdSpace.nii.gz']);
         if length(f9)==1
             disp('FunImg has been normalized, omit this step...');
             unix('rm Func2std.nii.gz');
@@ -130,7 +130,7 @@ parfor i=1:n_sub
         else
             infile1=['./',folder,'/',outfile1];
             infile2=['./',folder,'/',outfile2];
-            g_Func2std_mapping(infile1,infile2)
+            g_Func2std_mapping(infile1,infile2,options.resolution)
         end
         
         %plot picture
